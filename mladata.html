@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mláďata | Jaguar Sanctuary</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    body {
+      background-color: #fff8dc;
+      font-size: 1.1rem;
+      color: #2f2305;
+    }
+    .navbar {
+      background-color: #fff8dc !important;
+      border-bottom: 2px solid #e0c97a;
+    }
+    .navbar-brand {
+      font-weight: 700;
+      font-size: 2.4rem;
+      color: #3c2f0a !important;
+    }
+    .nav-link {
+      color: #3c2f0a !important;
+      font-weight: 500;
+      font-size: 1.1rem;
+    }
+    .nav-link:hover {
+      text-decoration: underline;
+    }
+    h2, h3 {
+      color: #3c2f0a;
+      font-weight: 700;
+    }
+    p {
+      line-height: 1.7;
+    }
+    .card img {
+      height: 300px;
+      object-fit: cover;
+      border-radius: 10px;
+    }
+    .card-title {
+      font-size: 1.2rem;
+      font-weight: 600;
+    }
+    .card-text {
+      font-size: 1rem;
+    }
+    .status {
+      font-weight: 600;
+      margin-bottom: 5px;
+    }
+    .cta-btn {
+      margin-top: 10px;
+    }
+    footer {
+      background-color: #212529;
+      color: white;
+      padding: 30px 0;
+      font-size: 1.05rem;
+    }
+    .section {
+      margin-top: 50px;
+      margin-bottom: 50px;
+    }
+    .center-text p {
+      text-align: center;
+      margin-bottom: 10px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg px-4">
+    <div class="container-fluid">
+      <h1 class="navbar-brand mb-0">Mláďata</h1>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto me-4">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Domů</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Naše zvířata</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="pece.html">Péče o jaguáry</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="zajem.html">Máte zájem?</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Dostupná mláďata -->
+  <section class="container section">
+    <h2 class="text-center mb-4">Dostupná mláďata</h2>
+    <div class="row g-4">
+      <!-- Mládě 1 -->
+      <div class="col-md-6">
+        <div class="card shadow-sm">
+          <img src="https://placehold.co/700x300?text=Jaguar+Mláďě+1" class="card-img-top" alt="Mláďě 1">
+          <div class="card-body">
+            <div class="status">Volné</div>
+            <h5 class="card-title">Jaguar Maya</h5>
+            <p class="card-text"><strong>Rodiče:</strong> Jaguar Toro & Jaguar Luna</p>
+            <p class="card-text"><strong>Datum k odběru:</strong> 7. 6. 2025</p>
+            <p class="card-text">Hravo-aktivní, zvídavé a zvědavé mládě.</p>
+            <a href="zajem.html" class="btn btn-primary cta-btn">Zažádat o rezervaci</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Mládě 2 -->
+      <div class="col-md-6">
+        <div class="card shadow-sm">
+          <img src="https://placehold.co/700x300?text=Jaguar+Mláďě+2" class="card-img-top" alt="Mláďě 2">
+          <div class="card-body">
+            <div class="status">Rezervace</div>
+            <h5 class="card-title">Jaguar Nika</h5>
+            <p class="card-text"><strong>Rodiče:</strong> Jaguar Nero & Jaguar Bella</p>
+            <p class="card-text"><strong>Datum k odběru:</strong> 12. 9. 2025</p>
+            <p class="card-text">Klidná, učenlivá a přátelská k lidem.</p>
+            <a href="zajem.html" class="btn btn-primary cta-btn">Zažádat o rezervaci</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Plánované vrhy -->
+  <section class="container section">
+    <h2 class="text-center mb-4">Plánované vrhy</h2>
+    <div class="row g-4">
+      <div class="col-md-6">
+        <div class="card shadow-sm">
+          <div class="card-body center-text">
+            <h5 class="card-title">Rodiče: Jaguar Toro & Jaguar Luna</h5>
+            <p><strong>Předpokládaný termín:</strong> Listopad 2025</p>
+            <p><strong>Očekávané vlastnosti:</strong> Aktivní, hravé, učenlivé.</p>
+            <a href="zajem.html" class="btn btn-secondary cta-btn">Přidat se na čekací listinu</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-6">
+        <div class="card shadow-sm">
+          <div class="card-body center-text">
+            <h5 class="card-title">Rodiče: Jaguar Nero & Jaguar Bella</h5>
+            <p><strong>Předpokládaný termín:</strong> Prosinec 2025</p>
+            <p><strong>Očekávané vlastnosti:</strong> Klidné, přátelské, učenlivé.</p>
+            <a href="zajem.html" class="btn btn-secondary cta-btn">Přidat se na čekací listinu</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Co je v ceně -->
+  <section class="container section center-text">
+    <h2 class="text-center mb-4">Co je v ceně</h2>
+    <p>Čip</p>
+    <p>Očkování</p>
+    <p>Pas</p>
+    <p>Startovací balíček</p>
+    <p>Chovatelský servis</p>
+  </section>
+
+  <!-- Jak probíhá odběr -->
+  <section class="container section center-text">
+    <h2 class="text-center mb-4">Jak probíhá odběr</h2>
+    <p>Kontaktujte nás přes formulář nebo telefon.</p>
+    <p>Návštěva mláděte a složení zálohy.</p>
+    <p>Odběr mláděte a následná podpora chovu.</p>
+  </section>
+
+  <!-- FAQ -->
+  <section class="container section center-text">
+    <h2 class="text-center mb-4">FAQ</h2>
+    <p><strong>Cena/platby:</strong> Možnost platby na splátky nebo převodem.</p>
+    <p><strong>Doprava:</strong> Možnost dovozu mláděte domů nebo osobní odběr.</p>
+    <p><strong>Výbava na první dny:</strong> Všechny potřebné věci jsou součástí startovacího balíčku.</p>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container text-center">
+      <p class="mb-2"><strong>Chovatelská stanice Jaguar Sanctuary</strong></p>
+      <p>Adresa: U Tygří stezky 42, 110 00 Praha</p>
+      <p>Email: info@jaguarstanice.cz | Tel: +420 777 123 456</p>
+      <p>Otevřeno: Po–Ne, 9:00–18:00</p>
+      <p class="mt-3 mb-0">© 2025 Jaguar Sanctuary. Všechna práva vyhrazena.</p>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
