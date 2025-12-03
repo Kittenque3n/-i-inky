@@ -4,7 +4,6 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Péče o jaguary | Jaguar Sanctuary</title>
-  <!-- Bootstrap CSS -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
   <style>
     body {
@@ -61,6 +60,22 @@
     .care-img:hover {
       transform: scale(1.02);
     }
+    .cta-top, .cta-bottom {
+      text-align: center;
+      margin: 20px 0;
+    }
+    .cta-btn {
+      margin: 5px;
+    }
+    /* sticky mobilní tlačítka */
+    @media(max-width: 768px) {
+      .mobile-cta {
+        position: fixed;
+        bottom: 10px;
+        right: 10px;
+        z-index: 9999;
+      }
+    }
   </style>
 </head>
 <body>
@@ -77,35 +92,29 @@
 
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav ms-auto me-4">
-          <li class="nav-item">
-            <a class="nav-link" href="index.html">Domů</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="index.html">Naše zvířata</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="mladata.html">Mláďata</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="zajem.html">Máte zájem?</a>
-          </li>
+          <li class="nav-item"><a class="nav-link" href="domu.html">Domů</a></li>
+          <li class="nav-item"><a class="nav-link" href="index.html">Naše zvířata</a></li>
+          <li class="nav-item"><a class="nav-link active" href="pece.html">Péče o jaguáry</a></li>
+          <li class="nav-item"><a class="nav-link" href="mladata.html">Mláďata</a></li>
+          <li class="nav-item"><a class="nav-link" href="zajem.html">Máte zájem?</a></li>
         </ul>
-        <form class="d-flex" role="search">
-          <input class="form-control me-2" type="search" placeholder="Vyhledat zvíře..." aria-label="Search">
-          <button class="btn btn-outline-success" type="submit">Hledat</button>
-        </form>
       </div>
     </div>
   </nav>
+
+  <!-- CTA nahoře -->
+  <div class="cta-top">
+    <a href="zajem.html" class="btn btn-primary cta-btn">Zažádat o rezervaci</a>
+    <a href="mladata.html" class="btn btn-secondary cta-btn">Zeptat se na mládě</a>
+  </div>
 
   <!-- Obsah -->
   <section class="container my-5">
     <div class="text-center">
       <h2>Jak se staráme o jaguáry</h2>
       <p class="mt-3">
-        Péče o jaguáry vyžaduje zkušenosti, trpělivost a hluboký respekt. Naše stanice Jaguar Sanctuary vytváří
-        prostředí, které co nejvíce připomíná přirozený život těchto krásných šelem. Níže naleznete přehled
-        informací o jejich povaze, zdraví a potřebách.
+        Péče o jaguáry vyžaduje zkušenosti, trpělivost a hluboký respekt. Naše stanice vytváří prostředí,
+        které co nejvíce připomíná přirozený život těchto krásných šelem. Níže naleznete přehled informací o jejich povaze, zdraví a potřebách.
       </p>
     </div>
 
@@ -124,14 +133,12 @@
 
       <div class="care-section">
         <h3>Zdraví</h3>
-        <p>Jaguáři mají silný imunitní systém, ale mohou trpět kloubními obtížemi nebo problémy se zuby. Preventivní
-          prohlídky a genetické testy jsou základem zdravého chovu.</p>
+        <p>Jaguáři mají silný imunitní systém, ale mohou trpět kloubními obtížemi nebo problémy se zuby. Preventivní prohlídky a genetické testy jsou základem zdravého chovu.</p>
       </div>
 
       <div class="care-section">
         <h3>Péče & výcvik</h3>
-        <p>Krmení probíhá 1–2× denně čerstvým masem. Péče o srst spočívá v kontrole a udržování čistoty.
-          Výcvik je založen na pozitivním posilování.</p>
+        <p>Krmení probíhá 1–2× denně čerstvým masem. Péče o srst spočívá v kontrole a udržování čistoty. Výcvik je založen na pozitivním posilování.</p>
       </div>
 
       <div class="care-section">
@@ -152,7 +159,7 @@
     </div>
 
     <div class="my-5">
-      <img src="images/imposter.jpg" alt="Jaguár 2" class="care-img mb-4">
+      <img src="https://placehold.co/600x600?text=Jaguár+2" alt="Jaguár 2" class="care-img mb-4">
 
       <div class="care-section">
         <h3>Povaha & potřeby</h3>
@@ -192,6 +199,13 @@
     </div>
   </section>
 
+  <!-- CTA dole -->
+  <div class="cta-bottom">
+    <a href="zajem.html" class="btn btn-primary cta-btn">Zažádat o rezervaci</a>
+    <a href="mladata.html" class="btn btn-secondary cta-btn">Zeptat se na mládě</a>
+  </div>
+
+  <!-- Footer -->
   <footer>
     <div class="container text-center">
       <p class="mb-2"><strong>Chovatelská stanice Jaguar Sanctuary</strong></p>
@@ -201,6 +215,12 @@
       <p class="mt-3 mb-0">© 2025 Jaguar Sanctuary. Všechna práva vyhrazena.</p>
     </div>
   </footer>
+
+  <!-- Mobilní CTA -->
+  <div class="mobile-cta">
+    <a href="zajem.html" class="btn btn-primary">Kontakt</a>
+    <a href="mladata.html" class="btn btn-secondary">Mláďata</a>
+  </div>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>

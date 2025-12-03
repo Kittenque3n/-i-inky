@@ -50,10 +50,14 @@
     .status {
       font-weight: 600;
       margin-bottom: 5px;
+      padding: 3px 8px;
+      border-radius: 5px;
+      display: inline-block;
     }
-    .cta-btn {
-      margin-top: 10px;
-    }
+    .status.volne { background-color: #28a745; color: white; }
+    .status.rezervace { background-color: #ffc107; color: black; }
+    .status.v-novem-domove { background-color: #6c757d; color: white; }
+    .cta-btn { margin-top: 10px; }
     footer {
       background-color: #212529;
       color: white;
@@ -68,11 +72,18 @@
       text-align: center;
       margin-bottom: 10px;
     }
+    .cta-top, .cta-bottom {
+      text-align: center;
+      margin: 20px 0;
+    }
+    .cta-top .btn, .cta-bottom .btn {
+      margin: 5px;
+    }
   </style>
 </head>
 <body>
 
-  <!-- Navbar -->
+  <!-- Navigace -->
   <nav class="navbar navbar-expand-lg px-4">
     <div class="container-fluid">
       <h1 class="navbar-brand mb-0">Mláďata</h1>
@@ -80,56 +91,50 @@
         aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
-
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav ms-auto me-4">
-          <li class="nav-item">
-            <a class="nav-link" href="index.html">Domů</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="index.html">Naše zvířata</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="pece.html">Péče o jaguáry</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="zajem.html">Máte zájem?</a>
-          </li>
+          <li class="nav-item"><a class="nav-link" href="domu.html">Domů</a></li>
+          <li class="nav-item"><a class="nav-link" href="index.html">Naše zvířata</a></li>
+          <li class="nav-item"><a class="nav-link" href="pece.html">Péče o jaguáry</a></li>
+          <li class="nav-item"><a class="nav-link active" href="mladata.html">Mláďata</a></li>
+          <li class="nav-item"><a class="nav-link" href="zajem.html">Máte zájem?</a></li>
         </ul>
       </div>
     </div>
   </nav>
 
+  <!-- CTA nahoře -->
+  <div class="cta-top">
+    <a href="zajem.html" class="btn btn-primary cta-btn">Zažádat o rezervaci</a>
+    <a href="mladata.html" class="btn btn-secondary cta-btn">Zeptat se na mládě</a>
+  </div>
+
   <!-- Dostupná mláďata -->
   <section class="container section">
     <h2 class="text-center mb-4">Dostupná mláďata</h2>
     <div class="row g-4">
-      <!-- Mládě 1 -->
       <div class="col-md-6">
         <div class="card shadow-sm">
           <img src="https://placehold.co/700x300?text=Jaguar+Mláďě+1" class="card-img-top" alt="Mláďě 1">
           <div class="card-body">
-            <div class="status">Volné</div>
+            <div class="status volne">Volné</div>
             <h5 class="card-title">Jaguar Maya</h5>
             <p class="card-text"><strong>Rodiče:</strong> Jaguar Toro & Jaguar Luna</p>
             <p class="card-text"><strong>Datum k odběru:</strong> 7. 6. 2025</p>
-            <p class="card-text">Hravo-aktivní, zvídavé a zvědavé mládě.</p>
-            <a href="zajem.html" class="btn btn-primary cta-btn">Zažádat o rezervaci</a>
+            <p class="card-text">Hravo-aktivní, zvídavé a zvědavé mládě. Cenu sdělíme po krátkém rozhovoru — dbáme na správný match.</p>
           </div>
         </div>
       </div>
 
-      <!-- Mládě 2 -->
       <div class="col-md-6">
         <div class="card shadow-sm">
           <img src="https://placehold.co/700x300?text=Jaguar+Mláďě+2" class="card-img-top" alt="Mláďě 2">
           <div class="card-body">
-            <div class="status">Rezervace</div>
+            <div class="status rezervace">Rezervace</div>
             <h5 class="card-title">Jaguar Nika</h5>
             <p class="card-text"><strong>Rodiče:</strong> Jaguar Nero & Jaguar Bella</p>
             <p class="card-text"><strong>Datum k odběru:</strong> 12. 9. 2025</p>
-            <p class="card-text">Klidná, učenlivá a přátelská k lidem.</p>
-            <a href="zajem.html" class="btn btn-primary cta-btn">Zažádat o rezervaci</a>
+            <p class="card-text">Klidná, učenlivá a přátelská k lidem. Cenu sdělíme po krátkém rozhovoru — dbáme na správný match.</p>
           </div>
         </div>
       </div>
@@ -146,7 +151,6 @@
             <h5 class="card-title">Rodiče: Jaguar Toro & Jaguar Luna</h5>
             <p><strong>Předpokládaný termín:</strong> Listopad 2025</p>
             <p><strong>Očekávané vlastnosti:</strong> Aktivní, hravé, učenlivé.</p>
-            <a href="zajem.html" class="btn btn-secondary cta-btn">Přidat se na čekací listinu</a>
           </div>
         </div>
       </div>
@@ -157,38 +161,17 @@
             <h5 class="card-title">Rodiče: Jaguar Nero & Jaguar Bella</h5>
             <p><strong>Předpokládaný termín:</strong> Prosinec 2025</p>
             <p><strong>Očekávané vlastnosti:</strong> Klidné, přátelské, učenlivé.</p>
-            <a href="zajem.html" class="btn btn-secondary cta-btn">Přidat se na čekací listinu</a>
           </div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Co je v ceně -->
-  <section class="container section center-text">
-    <h2 class="text-center mb-4">Co je v ceně</h2>
-    <p>Čip</p>
-    <p>Očkování</p>
-    <p>Pas</p>
-    <p>Startovací balíček</p>
-    <p>Chovatelský servis</p>
-  </section>
-
-  <!-- Jak probíhá odběr -->
-  <section class="container section center-text">
-    <h2 class="text-center mb-4">Jak probíhá odběr</h2>
-    <p>Kontaktujte nás přes formulář nebo telefon.</p>
-    <p>Návštěva mláděte a složení zálohy.</p>
-    <p>Odběr mláděte a následná podpora chovu.</p>
-  </section>
-
-  <!-- FAQ -->
-  <section class="container section center-text">
-    <h2 class="text-center mb-4">FAQ</h2>
-    <p><strong>Cena/platby:</strong> Možnost platby na splátky nebo převodem.</p>
-    <p><strong>Doprava:</strong> Možnost dovozu mláděte domů nebo osobní odběr.</p>
-    <p><strong>Výbava na první dny:</strong> Všechny potřebné věci jsou součástí startovacího balíčku.</p>
-  </section>
+  <!-- CTA dole -->
+  <div class="cta-bottom">
+    <a href="zajem.html" class="btn btn-primary cta-btn">Zažádat o rezervaci</a>
+    <a href="mladata.html" class="btn btn-secondary cta-btn">Zeptat se na mládě</a>
+  </div>
 
   <!-- Footer -->
   <footer>
